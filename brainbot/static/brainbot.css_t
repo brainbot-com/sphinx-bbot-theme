@@ -210,3 +210,9 @@ tt {
     font-family: monospace !important;
     background-color: #fafafa;
 }
+
+#footer div {
+    text-align: center;
+    padding: 1em;
+    padding-top:0;
+}
