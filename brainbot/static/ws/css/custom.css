@@ -1,0 +1,63 @@
+/* =================================================================== */
+/* Custom CSS adjustments
+====================================================================== */
+.orangefield {
+    background: #FA5B0F;
+    width: 100%;
+    position: relative;
+    height: 100px;
+}
+/* Partner Logo reverse fade
+====================================*/
+.image-overlay-fade {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 40;
+	display: none;
+	background: rgba(255, 255, 255, 0.5);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	cursor: pointer;
+}
+figcaption {
+    color: #666;
+    line-height: 24px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .orangefield { height: 79px; }
+}
+@media only screen and (max-width: 767px) {
+    .orangefield { display: none;}
+}
+#wrapper { padding-top: 20px; }
+#tagline {
+    padding: 11px 0 10px 20px;
+}
+#contact-details {
+    margin-top: 25px;
+    line-height: 37px;
+}
+
+body, p { font-family: Helvetica, Arial, sans-serif; }
+.item-description.alt p { font-size: 12px; }
+.item-description a { color: #fa5b0f; }
+h1,h2,h3,h4,h5,h6, p.lead, .item-description h5 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p.lead {
+    font-weight: 300;
+    line-height: 35px;
+}
+.emptyNavLink {cursor: default;}
+#footer .links-list li {
+    margin-bottom: 0;
+}
+.flexslider li, #contact-details li {margin-bottom: 0; font-size: inherit}
+.links-list li a { background: none; padding-left: 0}
+.links-list li a:before { content: "▸ " }
+
+.client-list li { width: 187px;} /* required for IE */
