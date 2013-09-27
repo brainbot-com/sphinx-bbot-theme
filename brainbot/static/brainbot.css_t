@@ -216,3 +216,8 @@ tt {
     padding: 1em;
     padding-top:0;
 }
+
+div.rel {
+    font-size: 125%;
+    float: right;
+}
