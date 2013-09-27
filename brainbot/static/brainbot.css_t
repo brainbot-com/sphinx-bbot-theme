@@ -186,6 +186,26 @@ h3 {
     margin-top: 0.5em;
     margin-bottom: 0em;
 }
+
+dl {
+    margin:0.5em 0em;
+}
+
+dl * {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+dt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+dd {
+    margin: 0;
+    padding: 0 0 0.5em 1em;
+}
+
 tt {
     font-family: monospace !important;
     background-color: #fafafa;
