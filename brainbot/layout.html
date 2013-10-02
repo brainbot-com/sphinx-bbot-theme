@@ -133,36 +133,6 @@
 
 <div id="wrapper">
   <div class="container ie-dropdown-fix">
-    
-    <!-- Header -->
-    <div id="header">
-      <!-- Logo -->
-      <div class="ten columns">
-        <div id="logo">
-          <a href="{{ pathto(master_doc) }}"><img class="retina" style="max-width: 185px" src="{{ pathto('_static/ws/images/bb_logo.png', 1) }}" alt="logo" /></a>
-          <div id="tagline" style="text-transform: none; font-size: 16px; font-weight: normal">The Search Experts</div>
-          <div class="clear"></div>
-        </div>
-      </div>
-      <!-- Contact -->
-      <div class="six columns">
-        <div class="clear"></div>
-        <!-- Contact Details -->
-        <div id="contact-details">
-          <ul>
-            <li><i class="mini-ico-envelope"></i>
-              <script type="text/javascript">
-                document.write("<n uers=\"znvygb:pbagnpg@oenvaobg.pbz\">pbagnpg@oenvaobg.pbz</n>".replace(/[a-zA-Z]/g,
-                function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
-              </script>
-            </li>
-            <li><i class="mini-ico-user"></i><a href="tel:49-6131-2116391">+49&nbsp;(0)&nbsp;6131&nbsp;2116391</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- Header / End -->
-
   <!-- Navigation -->
   <div class="sixteen columns">
     <div id="navigation">
@@ -172,6 +142,7 @@
   </div>
   <!-- Navigation / End -->
 
+    {% include 'header.html' %}
 
     {%- block content %}
     <div class="content-wrapper">
