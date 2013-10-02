@@ -133,51 +133,49 @@
 
 <div id="wrapper">
   <div class="container ie-dropdown-fix">
-  <!-- Navigation -->
-  <div class="sixteen columns">
-    <div id="navigation">
-      {% include 'navigation.html' %}
-    </div> 
-    <div class="clear"></div>
-  </div>
-  <!-- Navigation / End -->
 
     {% include 'header.html' %}
 
+    <!-- Navigation -->
+    <div class="sixteen columns">
+      <div id="navigation">
+	{% include 'navigation.html' %}
+      </div> 
+      <div class="clear"></div>
+    </div>
+    <!-- Navigation / End -->
+    
+    
     {%- block content %}
     <div class="content-wrapper">
       <div class="content">
-
-
-<div class="container">
-
-  <div class="eleven columns">
-
-
-    <div class="document">
-      {%- block document %}
-      <div class="documentwrapper">
-	{%- if render_sidebar %}
-	<div class="bodywrapper">
-	  {%- endif %}
-	  <div class="body">
+	
+	<div class="container">
+	  <div class="eleven columns">
+	    
+	    <div class="document">
+	      {%- block document %}
+	      <div class="documentwrapper">
+		{%- if render_sidebar %}
+		<div class="bodywrapper">
+		  {%- endif %}
+		  <div class="body">
+		    
+		    {{ relnav() }}
+		    
+		    {% block body %} {% endblock %}
+		  </div>
+		  {%- if render_sidebar %}
+		</div>
+		{%- endif %}
+	      </div>
+	      {%- endblock %}
+	    </div>
 	    
 	    {{ relnav() }}
-    
-	    {% block body %} {% endblock %}
+	    
+	    
 	  </div>
-	  {%- if render_sidebar %}
-	</div>
-	{%- endif %}
-      </div>
-      {%- endblock %}
-    </div>
-
-    {{ relnav() }}
-
-
-  </div>
-
 	  
 	  {{ sidebar() }}
 	  
