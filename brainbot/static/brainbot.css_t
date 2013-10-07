@@ -1,14 +1,12 @@
 
-@import url("ws/css/base.css"); 	/* reset */
-@import url("ws/css/skeleton.css"); 	/* define basic grid */
-@import url("ws/css/style.css"); 	/* specific "centum style. define animations etc.*/
-@import url("ws/css/boxed.css"); 	/* define boxes... */
-@import url("ws/css/custom.css"); 	/* bbot specific custom modifications*/
-/* @import url("ws/css/fancybox.css"); 	 */
-/* @import url("ws/css/icons.css"); 	 */
-@import url("ws/css/orange.css"); 	/* define colors */
+/* @import url("ws/css/base.css"); 	/\* reset *\/ */
+/* @import url("ws/css/skeleton.css"); 	/\* define basic grid *\/ */
+/* @import url("ws/css/style.css"); 	/\* specific "centum style. define animations etc.*\/ */
+/* @import url("ws/css/boxed.css"); 	/\* define boxes... *\/ */
+/* @import url("ws/css/custom.css"); 	/\* bbot specific custom modifications*\/ */
+/* @import url("ws/css/orange.css"); 	/\* define colors *\/ */
 
-/* @import url("ws/js/packed.js"); */
+@import url("ws/css/packed.css");
 
 /* Sidebar */
 
