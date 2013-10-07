@@ -146,12 +146,28 @@
     </div>
     <!-- Navigation / End -->
 
-      <div class="eleven columns">
-	{{ relnav() }}
-	{% block body %} {% endblock %}
-	{{ relnav() }}
-      </div>
-      {{ sidebar() }}
+  </div>
+  <div class="container">
+
+    <!-- Breadcrumbs -->
+    <div class="sixteen columns">
+      <div id="page-title">
+	<h2>Technologien <span>/ {{ docstitle|e }}</span></h2>
+      <div class="clear"></div>
+      <div id="bolded-line"></div>
+      </div> 
+    </div>
+    <!-- Breadcrumbs / End -->
+    
+  </div>
+  <div class="container">
+
+    <div class="eleven columns">
+      {{ relnav() }}
+      {% block body %} {% endblock %}
+      {{ relnav() }}
+    </div>
+    {{ sidebar() }}
   
   </div> <!-- class=container -->
 </div> <!-- id=wrapper -->
