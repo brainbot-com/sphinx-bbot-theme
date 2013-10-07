@@ -133,10 +133,9 @@
   <body>
 
 <div id="wrapper">
+
   <div class="container ie-dropdown-fix">
-
     {% include 'header.html' %}
-
     <!-- Navigation -->
     <div class="sixteen columns">
       <div id="navigation">
@@ -145,11 +144,9 @@
       <div class="clear"></div>
     </div>
     <!-- Navigation / End -->
-
   </div>
-  <div class="container">
 
-    <!-- Breadcrumbs -->
+  <div class="container">     <!-- Breadcrumbs -->
     <div class="sixteen columns">
       <div id="page-title">
 	<h2>Technologien <span>/ {{ docstitle|e }}</span></h2>
@@ -157,19 +154,17 @@
       <div id="bolded-line"></div>
       </div> 
     </div>
-    <!-- Breadcrumbs / End -->
-    
-  </div>
-  <div class="container">
+  </div>     <!-- Breadcrumbs / End -->
 
+  <div class="container"> <!-- CONTENT -->
     <div class="eleven columns">
       {{ relnav() }}
       {% block body %} {% endblock %}
       {{ relnav() }}
     </div>
     {{ sidebar() }}
-  
-  </div> <!-- class=container -->
+  </div> <!-- CONTENT / End -->
+
 </div> <!-- id=wrapper -->
 
 <div id="footer">
