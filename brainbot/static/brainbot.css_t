@@ -168,7 +168,7 @@ ul {
 }
 
 li {
-   margin-bottom:5px;
+    margin: 5px 0;
 }
 
 h1,  *:not(div#page-title) h2 {
@@ -218,4 +218,8 @@ tt {
 div.rel {
     font-size: 125%;
     float: right;
+}
+
+.content ul ul {
+    margin-left: 1em;
 }
