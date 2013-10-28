@@ -141,9 +141,11 @@
     {% include 'header.html' %}
     <!-- Navigation -->
     <div class="sixteen columns">
+      {%- if enable_navigation %}
       <div id="navigation">
 	{% include 'navigation.html' ignore missing %}
-      </div> 
+      </div>
+      {%- endif %}
       <div class="clear"></div>
     </div>
     <!-- Navigation / End -->
@@ -152,7 +154,11 @@
   <div class="container">     <!-- Breadcrumbs -->
     <div class="sixteen columns">
       <div id="page-title">
+	{%- if enable_navigation %}
 	<h2>Technologien <span>/ {{ docstitle|e }}</span></h2>
+	{%- else %}
+	<h2><span> {{ docstitle|e }}</span></h2>
+	{%- endif %}
       <div class="clear"></div>
       <div id="bolded-line"></div>
       </div> 
