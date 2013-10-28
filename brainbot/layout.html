@@ -78,6 +78,9 @@
     <p class="searchtip" style="font-size: 90%">
       {{ _('Enter search terms or a module, class or function name.') }}
     </p>
+    <h3 style="margin-top: 1.5em;">Navigation</h3>
+    {{ relnav() }}
+
     {%- endblock %}
   </div>
 </div>
@@ -158,9 +161,7 @@
 
   <div class="container"> <!-- CONTENT -->
     <div class="eleven columns content">
-      {{ relnav() }}
       {% block body %} {% endblock %}
-      {{ relnav() }}
     </div>
     {{ sidebar() }}
   </div> <!-- CONTENT / End -->
