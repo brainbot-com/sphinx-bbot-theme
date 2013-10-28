@@ -181,7 +181,7 @@
     {%- if hasdoc('copyright') %}
     {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
     {%- else %}
-    {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+    {% trans copyright=copyright|e %}&copy; Copyright 2013, <a href="http://brainbot.com">brainbot technologies AG</a>{% endtrans %}
     {%- endif %}
     {%- endif %}
     {%- if last_updated %}
