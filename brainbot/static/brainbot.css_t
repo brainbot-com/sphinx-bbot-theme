@@ -171,7 +171,7 @@ li {
     margin: 5px 0;
 }
 
-h1,  *:not(div#page-title) h2 {
+h1,  .content h2 {
     margin-top: 0.75em;
     margin-bottom: 0.25em;
 }
