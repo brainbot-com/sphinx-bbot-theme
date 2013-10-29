@@ -222,3 +222,18 @@ div.rel {
 .content ul ul {
     margin-left: 1em;
 }
+
+.note {
+    border: 2px solid #fafafa;
+    margin: 0.5em 0;
+}
+
+.note .admonition-title {
+    background-color: #fafafa;
+    font-weight: bold;
+}
+
+.note p {
+    padding-left: 1em;
+}
+
